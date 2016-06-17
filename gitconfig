@@ -1,0 +1,16 @@
+##
+## Christopher C. Strelioff
+## 2016 MIT LICENSE
+##
+## 2016, June: Ubuntu 14.04LTS
+##
+
+[color]
+	ui = true
+[user]
+	name = Christopher C Strelioff
+	email = chris.strelioff@gmail.com
+[push]
+	default = matching
+[core]
+	autocrlf = input
