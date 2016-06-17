@@ -2,7 +2,7 @@
 ## Christopher C. Strelioff
 ## 2016 MIT LICENSE
 ##
-## 2016, June: Ubutnu 14.04LTS
+## 2016, June: Ubuntu 14.04LTS
 ##
 
 # when leaving the console clear the screen to increase privacy
