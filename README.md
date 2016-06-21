@@ -12,7 +12,7 @@ A **Python 3** deploy script is available for simple deployment of the
 included dotfiles on a new machine.
 
 **Note:** Do not blindly use this! Please carefully look at the files and make
-backups before trying anything. 
+backups before trying anything!
 
 If you want to move forward, do:
 
@@ -27,10 +27,11 @@ $ ./deploy.py
 notes
 -----
 
-* The deploy.py script is Python 3. If you want to use the script you'll have
-  to change the shebang and handle the *print* statements in your preferred
-  way -- we all should really move to Python 3.
-* I have a .profile instead of .bash_profile or similar-- this is because I
-  work on Ubuntu/Debian machines.  If you are not, this file should be changed
-  to the appropriate version.
+* The deploy.py script is Python 3. If you want to use the script with Python
+  2.7+ you'll have to change the shebang (at the top of the file) and handle
+  the *print* statement/function in your preferred way -- we all should really
+  move to Python 3.
+* I have a .profile instead of .bash_profile or other file-- this is because I
+  work on Ubuntu/Debian machines.  If you are on another OS, this file should
+  be changed to the appropriate filename.
 
