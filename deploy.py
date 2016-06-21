@@ -50,7 +50,6 @@ def main():
     changes = 0
     errors = 0
     for df in df_list:
-        # symbolic links can be made with os.symlink(src, dest)
         df_path = os.path.join(home_dir, df.destination)
         print("\n- Checking: {dest}".format(dest=df_path))
     
