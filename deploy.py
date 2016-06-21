@@ -52,7 +52,7 @@ def main():
     for df in df_list:
         df_path = os.path.join(home_dir, df.destination)
         print("\n- Checking: {dest}".format(dest=df_path))
-    
+
         if os.path.islink(df_path) and os.path.samefile(df.source, df_path):
             # the destination is a link and samefile says source and dest
             # are the same
@@ -64,7 +64,7 @@ def main():
             msg = ("  > {dest} exists; "
                    "however it is a file").format(dest=df.destination)
             print(msg)
-            
+
             backup = df_path + ".bak-{}".format(str(today))
             os.rename(df_path, backup)
             os.symlink(os.path.join(repo_dir, df.source), df_path)
@@ -80,11 +80,11 @@ def main():
                    "  > PROBLEM!!!\n").format(dest=df.destination)
             print(msg)
             errors += 1
-    
+
     msg_final = ("\n- dotfiles deployed!\n"
                  "  > Files: {fil} -[Errors: {err}]-[Changes: {chn}]\n"
                  "  > Details above...\n").format(fil=files,
-                                                  err=errors, 
+                                                  err=errors,
                                                   chn=changes)
     print(msg_final)
 
