@@ -2,7 +2,7 @@
 ## Christopher C. Strelioff
 ## 2016 MIT LICENSE
 ##
-## 2016, June: Ubuntu 14.04LTS
+## 2016, July: Ubuntu 14.04LTS
 ##
 
 # If not running interactively, don't do anything
@@ -65,6 +65,8 @@ PS1='\u@\h:[\W]\\$ '
 export PATH=~/.local/bin:$PATH
 # include /opt/texbin in our path
 export PATH=~/opt/texbin:$PATH
+# for global installs by node via npm without sudo
+export PATH=~/.npm-global/bin:$PATH
 
 ## GIT
 # source: http://pastebin.com/K8TjJyjD#
