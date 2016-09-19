@@ -1,3 +1,4 @@
+" ~/.vimrc
 "
 " Christopher C. Strelioff
 " 2016 MIT LICENSE
@@ -41,6 +42,9 @@ set fo-=t   " don't automatically wrap text when typing
 colorscheme gruvbox
 set background=dark
 set colorcolumn=80
+
+" NERDTree shortcut
+map <C-n> :NERDTreeToggle<CR>
 
 " customize vim-template plugin
 let g:email = 'chris.strelioff@gmail.com'
