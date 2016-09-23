@@ -2,6 +2,7 @@
 ## Christopher C. Strelioff
 ## 2016 MIT LICENSE
 ##
+## 2016, Sep; Ubuntu 16.04LTS
 ## 2016, July: Ubuntu 14.04LTS
 ##
 
@@ -67,6 +68,10 @@ export PATH=~/.local/bin:$PATH
 export PATH=~/opt/texbin:$PATH
 # for global installs by node via npm without sudo
 export PATH=~/.npm-global/bin:$PATH
+
+## editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 ## GIT
 # source: http://pastebin.com/K8TjJyjD#
