@@ -2,7 +2,8 @@
 ## Christopher C. Strelioff
 ## 2016 MIT LICENSE
 ##
-## 2016, Sep; Ubuntu 16.04LTS
+## 2021, Aug: Ubuntu 20.04LTS
+## 2016, Sep: Ubuntu 16.04LTS
 ## 2016, July: Ubuntu 14.04LTS
 ##
 
@@ -82,6 +83,8 @@ alias gitlog='git log --graph --date-order -C -M --pretty=format:"%C(yellow)%h%C
 export WORKON_HOME=$HOME/virtenvs
 # where projects will reside
 export PROJECT_HOME=$HOME/Projects-Active
+# new setting for Python 3 on Ubunut 20.04
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 # where is the virtualenvwrapper.sh
 source $HOME/.local/bin/virtualenvwrapper.sh
 
