@@ -27,6 +27,10 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'morhetz/gruvbox'
 Plugin 'aperezdc/vim-template'
 Plugin 'davidhalter/jedi-vim'
+" add plugins for svelte
+Plugin 'othree/html5.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'evanleck/vim-svelte', {'branch': 'main'}
 
 " stop - all plugins above
 call vundle#end()
