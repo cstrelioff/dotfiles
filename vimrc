@@ -62,7 +62,7 @@ set laststatus=2
 
 " emmet - set HTML5 template to responsive
 let g:user_emmet_settings = {
-\  'variables': {'lang': 'ja'},
+\  'variables': {'lang': 'en'},
 \  'html': {
 \    'default_attributes': {
 \      'option': {'value': v:null},
