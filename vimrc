@@ -27,10 +27,12 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'morhetz/gruvbox'
 Plugin 'aperezdc/vim-template'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'mattn/emmet-vim'
 " add plugins for svelte
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'evanleck/vim-svelte', {'branch': 'main'}
+
 
 " stop - all plugins above
 call vundle#end()
@@ -57,3 +59,25 @@ let g:license = 'MIT'
 
 " lightline fix
 set laststatus=2
+
+" emmet - set HTML5 template to responsive
+let g:user_emmet_settings = {
+\  'variables': {'lang': 'ja'},
+\  'html': {
+\    'default_attributes': {
+\      'option': {'value': v:null},
+\      'textarea': {'id': v:null, 'name': v:null, 'cols': 10, 'rows': 10},
+\    },
+\    'snippets': {
+\      'html:5': "<!DOCTYPE html>\n"
+\              ."<html lang=\"${lang}\">\n"
+\              ."<head>\n"
+\              ."\t<meta charset=\"${charset}\">\n"
+\              ."\t<title></title>\n"
+\              ."\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
+\              ."</head>\n"
+\              ."<body>\n\t${child}|\n</body>\n"
+\              ."</html>",
+\    },
+\  },
+\}
