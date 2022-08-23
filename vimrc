@@ -73,8 +73,10 @@ let g:user_emmet_settings = {
 \              ."<html lang=\"${lang}\">\n"
 \              ."<head>\n"
 \              ."\t<meta charset=\"${charset}\">\n"
-\              ."\t<title></title>\n"
+\              ."\t<title>My Title</title>\n"
 \              ."\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
+\              ."\t<link href=\"css/styles.css\" rel=\"stylesheet\" type=\"text/css\" />\n"
+\              ."\t<script type=\"module\" src=\"js/main.js\"></script>\n"
 \              ."</head>\n"
 \              ."<body>\n\t${child}|\n</body>\n"
 \              ."</html>",
