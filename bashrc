@@ -60,7 +60,10 @@ fi
 ##
 
 ## custom prompt
-PS1='\u@\h:[\W]\\$ '
+#PS1='\u@\h:[\W]\\$ '
+#PS1='\n\[\w\]\n\u@\h \$ '
+PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ '
+
 
 ## PATH
 # include .local/bin for local python scripts
