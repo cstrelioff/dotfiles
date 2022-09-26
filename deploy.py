@@ -48,7 +48,7 @@ def main():
 
     files = len(df_list)
     changes = 0
-    errors = 0
+    newfiles = 0
     for df in df_list:
         df_path = os.path.join(home_dir, df.destination)
         print("\n- Checking: {dest}".format(dest=df_path))
@@ -74,17 +74,19 @@ def main():
             print(msg2)
             changes += 1
         else:
-            # no file or link
+            # no file or link - create symlink
+            os.symlink(os.path.join(repo_dir, df.source), df_path)
             msg = ("  > {dest} does not exist as "
                    "file or link\n"
-                   "  > PROBLEM!!!\n").format(dest=df.destination)
+                   "  > making link to {src}\n").format(dest=df.destination,
+                                                        src=df.source)
             print(msg)
-            errors += 1
+            newfiles += 1
 
     msg_final = ("\n- dotfiles deployed!\n"
-                 "  > Files: {fil} -[Errors: {err}]-[Changes: {chn}]\n"
+                 "  > Files: {fil} -[New files: {nf}]-[Changes: {chn}]\n"
                  "  > Details above...\n").format(fil=files,
-                                                  err=errors,
+                                                  nf=newfiles,
                                                   chn=changes)
     print(msg_final)
 
