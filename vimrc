@@ -14,6 +14,9 @@ set nocompatible
 " filetype func off
 filetype off
 
+" read njk as html for syntax
+au BufReadPost *.njk set syntax=html
+
 " initialize vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 
