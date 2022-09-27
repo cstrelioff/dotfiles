@@ -51,6 +51,9 @@ set fo-=t   " don't automatically wrap text when typing
 colorscheme gruvbox
 set background=dark
 set colorcolumn=80
+if !has('gui_running')
+  set t_Co=256
+endif
 
 " NERDTree shortcut
 map <C-n> :NERDTreeToggle<CR>

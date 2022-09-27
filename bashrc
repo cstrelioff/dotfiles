@@ -95,3 +95,12 @@ source $HOME/.local/bin/virtualenvwrapper.sh
 alias tmux='tmux -2'  # ensure 256 colors for tmux and vim
 eval "$(_TMUXP_COMPLETE=source tmuxp)" # tab-complete for tmuxp
 
+## color support
+if [ "$TERM" == "xterm" ]; then
+    # No it isn't, it's gnome-terminal
+    export TERM=xterm-256color
+fi
+
+
+
+
