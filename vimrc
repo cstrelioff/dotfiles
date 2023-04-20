@@ -58,6 +58,9 @@ endif
 " NERDTree shortcut
 map <C-n> :NERDTreeToggle<CR>
 
+" Toggle spellcheck
+map <C-s> :setlocal spell! spelllang=en_us<CR>
+
 " customize vim-template plugin
 let g:email = 'chris.strelioff@gmail.com'
 let g:user = 'Christopher C. Strelioff'
