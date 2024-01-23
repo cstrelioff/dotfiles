@@ -73,6 +73,10 @@ export PATH=~/opt/texbin:$PATH
 # for global installs by node via npm without sudo
 export PATH=~/.npm-global/bin:$PATH
 
+# n -- for nodejs version management
+export N_PREFIX=$HOME/n
+export PATH="$HOME/n/bin:$PATH"
+ 
 ## editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
