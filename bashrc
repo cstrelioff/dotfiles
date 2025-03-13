@@ -105,6 +105,7 @@ if [ "$TERM" == "xterm" ]; then
     export TERM=xterm-256color
 fi
 
-
+## digital ocean personal access token
+export DO_PAT=$(secret-tool lookup token digitalocean)
 
 
