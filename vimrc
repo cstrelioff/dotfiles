@@ -32,9 +32,10 @@ Plugin 'morhetz/gruvbox'
 Plugin 'aperezdc/vim-template'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'mattn/emmet-vim'
-" add plugins for svelte
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'Yggdroot/indentLine'
+" add plugins for svelte
 Plugin 'evanleck/vim-svelte', {'branch': 'main'}
 
 
@@ -71,6 +72,13 @@ let g:license = 'MIT'
 
 " lightline fix
 set laststatus=2
+
+" for yaml
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+" indentLine options
+"let g:indentLine_char = '⦙'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " emmet - set HTML5 template to responsive
 let g:user_emmet_settings = {
